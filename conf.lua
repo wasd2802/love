@@ -6,7 +6,7 @@ function love.conf(t)
     t.externalstorage = false           -- Android 上是否将存档写入外部存储。
     t.trackpadtouch = false             -- 是否将触控板操作模拟为触摸事件。
 
-    t.window.title = "Game"             -- 窗口标题；优先于 t.title。
+    t.window.title = "Demo"             -- 窗口标题；优先于 t.title。
     t.window.icon = nil                 -- 窗口图标文件路径；nil 表示使用默认图标。
     t.window.width = 800                -- 窗口初始宽度（像素）。
     t.window.height = 600               -- 窗口初始高度（像素）。
@@ -17,13 +17,13 @@ function love.conf(t)
     t.window.fullscreen = false         -- 是否以全屏模式启动。
     t.window.fullscreentype = "desktop" -- 全屏类型："desktop" 或 "exclusive"。
     t.window.displayindex = 1           -- 使用的显示器编号，从 1 开始。
-    t.window.vsync = 1                  -- 垂直同步：0 关闭，1 开启，或使用其他支持的同步模式。
-    t.window.msaa = 0                   -- 多重采样抗锯齿级别；0 表示关闭。
+    t.window.vsync = 0                  -- 垂直同步：0 关闭，1 开启，或使用其他支持的同步模式。
+    t.window.msaa = 2                   -- 多重采样抗锯齿级别；0 表示关闭。
     t.window.depth = nil                -- 深度缓冲位数；nil 表示使用默认值。
     t.window.stencil = nil              -- 模板缓冲位数；nil 表示使用默认值。
     t.window.borderless = false         -- 是否隐藏窗口边框。
-    t.window.resizable = false          -- 是否允许调整窗口大小。
-    t.window.centered = true            -- 是否将窗口居中显示。
+    t.window.resizable = true           -- 是否允许调整窗口大小。
+    t.window.centered = false           -- 是否将窗口居中显示。
     t.window.usedpiscale = true         -- 高 DPI 屏幕上是否启用自动 DPI 缩放。
 
     t.audio.mixwithsystem = true        -- 移动设备上是否允许游戏音频与系统音频同时播放。

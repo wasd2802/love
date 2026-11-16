@@ -1,6 +1,9 @@
 {
     "Lua.diagnostics.globals": [
-        "love"
+        "love",
     ],
-    "Lua.runtime.unicodeName": true
+    "Lua.runtime.unicodeName": true,
+    "Lua.diagnostics.disable": [
+        "lowercase-global"
+    ]
 }
