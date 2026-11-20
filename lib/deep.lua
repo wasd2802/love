@@ -60,6 +60,7 @@ function deep:draw(z_from, z_to)
    local from, to
    if z_from and z_to then
       if z_from > z_to then
+      ---@diagnostic disable-next-line: undefined-global
          printf("z_from (%i) can't be larger than z_to (%i)", z_from, z_to)
          return
       end
